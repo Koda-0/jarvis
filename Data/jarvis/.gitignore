@@ -1,0 +1,24 @@
+# Backend dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+
+# Uploads
+uploads/
+
+# Frontend
+client/node_modules/
+client/dist/
+client/.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
