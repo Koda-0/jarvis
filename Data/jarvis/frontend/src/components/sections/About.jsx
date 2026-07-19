@@ -60,9 +60,9 @@ export default function About() {
         <SectionHeader eyebrow="About Me" title="Crafting Digital Experiences" subtitle="That Matter" />
 
         {/* Bio grid */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
+        <div ref={ref} className="grid lg:grid-cols-2 gap-16 items-center mb-24">
           {/* Image panel */}
-          <motion.div ref={ref} initial={{ opacity: 0, x: -50 }} animate={inView ? { opacity: 1, x: 0 } : {}}
+          <motion.div initial={{ opacity: 0, x: -50 }} animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }} className="relative hidden lg:block">
             <div className="relative aspect-square max-w-md mx-auto">
               <motion.div animate={{ rotate: 360 }} transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
